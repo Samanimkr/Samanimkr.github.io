@@ -1,12 +1,42 @@
+nav {
+    opacity: 0.95;
+    position: fixed;
+    z-index: 100;
+    font-family: 'Rubik', sans-serif;
+}
+
 .brand-logo {
-  margin-left: 1.5%;
+    margin-left: 1.5%;
 }
 
 .right {
-  margin-right: 1%;
+    margin-right: 1%;
+}
+
+#wallpaper {
+    width: 100%;
 }
 
 .section {
-  padding: 0;
-  margin-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    color: white;
+    display: block;
+    float: left;
+}
+
+.welcome p{
+  font-size: 22px;
+}
+
+.repositories {
+  float: left;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  height: 200px;
+  width: 50%;
 }
