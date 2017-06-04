@@ -1,8 +1,11 @@
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
 nav {
     opacity: 0.95;
     position: fixed;
     z-index: 100;
-    font-family: 'Rubik', sans-serif;
 }
 
 .brand-logo {
@@ -15,28 +18,83 @@ nav {
 
 #wallpaper {
     width: 100%;
+    height: 400px;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    -ms-filter: blur(4px);
+    filter: blur(4px);
 }
 
 .section {
+    display: block;
     text-align: center;
     font-weight: bold;
-    font-family: 'Rubik', sans-serif;
     width: 100%;
-    padding: 0px 0px;
-    margin: 0px 0px;
-    color: white;
-    display: block;
+    padding: 0px;
+    margin: 0px;
     float: left;
+}
+
+.welcome {
+  padding-bottom: 25px;
 }
 
 .welcome p{
   font-size: 22px;
+  margin: 0;
 }
 
-.repositories {
+.links {
+  cursor: pointer;
   float: left;
-  margin: 0px 0px;
-  padding: 0px 0px;
   height: 200px;
-  width: 50%;
+  width: 33.333%;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.projects {
+  margin: 0 auto;
+  width: 90%;
+  height: 250px;
+}
+.picture {
+  float: left;
+  width: 30%;
+  height: 95%;
+  margin: 5px;
+}
+
+.picture img{
+  height: 100%;
+}
+
+.description {
+  text-align: left;
+  float: left;
+  width: 65%;
+  height: 95%;
+  margin: 5px;
+}
+
+#recent_repos {
+  padding-top: 15px;
+  padding-bottom: 30px
+}
+
+.repo_card {
+  padding-top: 15px;
+  width: 90%;
+  display: inline-block;
+  margin: 0 1%;
+}
+
+.repo_card p {
+  text-align: left;
+}
+
+.card-content {
+  height: 180px;
 }
