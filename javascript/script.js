@@ -2,12 +2,16 @@ $(document).ready(function() {
 
     $('#projectTab').hide(function(){});
 
-    $('.links').hover(function() {
-        $(this).toggleClass('lighten-2');
+    $('#arduino_btn, #profile_btn').hover(function() {
+        $(this).toggleClass('darken-1');
         $(this).toggleClass('lighten-1');
     });
 
-    $('#github_btn').click(function(){
+    $('#github_btn').hover(function() {
+        $(this).toggleClass('lighten-1');
+    });
+
+  /*  $('#github_btn').click(function(){
         $('#profileTab').hide(function(){});
         $('#projectTab').show(function(){});
     });
@@ -15,5 +19,5 @@ $(document).ready(function() {
       $('#projectTab').hide(function(){});
       $('#profileTab').show(function(){});
     });
-
+*/
 });

@@ -1,100 +1,116 @@
 body {
-  font-family: 'Rubik', sans-serif;
+    font-family: Rubik, sans-serif
 }
 
 nav {
-    opacity: 0.95;
+    opacity: .95;
     position: fixed;
-    z-index: 100;
+    z-index: 100
 }
 
 .brand-logo {
-    margin-left: 1.5%;
+    margin-left: 1.5%
 }
 
 .right {
-    margin-right: 1%;
+    margin-right: 1%
 }
 
 #wallpaper {
     width: 100%;
-    height: 400px;
+    height: 300px;
+    overflow: hidden;
     -webkit-filter: blur(4px);
     -moz-filter: blur(4px);
     -o-filter: blur(4px);
     -ms-filter: blur(4px);
-    filter: blur(4px);
+    filter: blur(4px)
+}
+
+#wallpaper img {
+    width: 100%;
+    height: 900px;
+    margin-top: -200px
 }
 
 .section {
     display: block;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
-    float: left;
+    padding: 0;
+    margin: 0;
+    float: left
 }
 
 .welcome {
-  padding-bottom: 25px;
+    padding-bottom: 25px
 }
 
-.welcome p{
-  font-size: 22px;
-  margin: 0;
+.welcome p {
+    font-size: 22px;
+    margin: 0
 }
 
 .links {
-  cursor: pointer;
-  float: left;
-  height: 200px;
-  width: 33.333%;
-  display: flex;
-  justify-content: center; /* align horizontal */
-  align-items: center; /* align vertical */
+    cursor: pointer;
+    float: left;
+    height: 150px;
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
-.projects {
-  margin: 0 auto;
-  width: 90%;
-  height: 250px;
-}
-.picture {
-  float: left;
-  width: 30%;
-  height: 95%;
-  margin: 5px;
-}
-
-.picture img{
-  height: 100%;
-}
-
-.description {
-  text-align: left;
-  float: left;
-  width: 65%;
-  height: 95%;
-  margin: 5px;
+#section_divider {
+    height: 6px
 }
 
 #recent_repos {
-  padding-top: 15px;
-  padding-bottom: 30px
+    background-image: url(../img/background2.jpg);
+    background-repeat: repeat;
+    padding-top: 15px;
+    padding-bottom: 30px
 }
 
 .repo_card {
-  padding-top: 15px;
-  width: 90%;
-  display: inline-block;
-  margin: 0 1%;
+    padding-top: 15px;
+    width: 80%;
+    display: inline-block;
+    margin: 0 1%
 }
 
 .repo_card p {
-  text-align: left;
+    text-align: left
 }
 
 .card-content {
-  height: 180px;
+    height: 180px
 }
+
+
+/*
+.projects {
+margin: 0 auto;
+width: 90%;
+height: 250px;
+}
+.picture {
+float: left;
+width: 30%;
+height: 95%;
+margin: 5px;
+}
+
+.picture img{
+height: 100%;
+}
+
+.description {
+text-align: left;
+float: left;
+width: 65%;
+height: 95%;
+margin: 5px;
+}
+*/
