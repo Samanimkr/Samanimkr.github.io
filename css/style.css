@@ -56,9 +56,10 @@ nav {
     padding-bottom: 15px;
 }
 
-.welcome p {
+#sub-heading {
     font-size: 22px;
-    margin: 0;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .links {
@@ -73,25 +74,29 @@ nav {
   height: 45%;
   margin: 20px auto;
   display: block;
+  -webkit-filter: brightness(5);
+  filter: brightness(5);
 }
 
 #section_divider {
     height: 6px;
 }
-
-#recent_repos {
-    display: none;
+.progress {
+  width: 60%;
+  height: 6px;
+  margin: 0 auto;
+}
+#repos {
     background-image: url(../img/pattern.png);
     background-repeat: repeat;
     padding-top: 10px;
     padding-bottom: 30px;
 }
 
-#github-repos {
+#git-cards {
   text-align: left;
   width: 100%;
 }
-
 .card-content {
   height: 200px;
   width: 100%;

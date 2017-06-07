@@ -1,16 +1,22 @@
 @media screen and (max-width:900px){
-  #github-repos p{
+  nav {
+    background-color: #039be5 !important;
+  }
+  #git-cards p{
     font-size: 14px;
   }
-  .welcome p {
+  #sub-heading {
+    width: 70%;
+  }
+  #sub-heading p {
       font-size: 20px;
   }
 }
 @media screen and (max-width:870px){
-  #github-repos span{
+  #git-cards span{
     font-size: 21px;
   }
-  #github-repos p{
+  #git-cards p{
     font-size: 13.5px;
   }
 }
@@ -18,16 +24,16 @@
   .welcome h2 {
       font-size: 3.4rem;
   }
-  .welcome p {
+  #sub-heading p {
       font-size: 18px;
   }
-  #github-repos span{
+  #git-cards span{
     font-size: 18.5px;
   }
-  #github-repos p{
+  #git-cards p{
     font-size: 13px;
   }
-  #github-repos a{
+  #git-cards a{
     font-size: 13px;
   }
 }
@@ -35,58 +41,67 @@
   .welcome h2 {
       font-size: 3.25rem;
   }
-  .welcome p {
-      font-size: 17px;
+  #sub-heading {
+    width: 80%;
   }
-  #github-repos span{
+  #sub-heading p {
+      font-size: 17.5px;
+  }
+  #git-cards span{
     font-size: 16px;
   }
-  #github-repos p{
-    font-size: 12.5px;
+  #git-cards p{
+    font-size: 15px;
   }
-  #github-repos a{
+  #git-cards a{
     font-size: 12px;
   }
 }
 @media screen and (max-width:600px){
-  nav {
-    background-color: #039be5 !important;
-  }
   .links {
     height: 120px;
   }
+  .links h5{
+    display: none;
+  }
+  .socialmedia{
+    height: 60%;
+  }
   .welcome h2 {
-      font-size: 2.8rem;
+    font-size: 2.8rem;
   }
-  .welcome p {
-      font-size: 15.5px;
+  #sub-heading {
+    width: 85%;
   }
-  #github-repos {
+  #sub-heading p {
+    font-size: 18.5px;
+  }
+  #git-cards {
     width: 75%;
   }
-  #github-repos span{
+  #git-cards span{
     font-size: 19.5px;
   }
-  #github-repos p{
+  #git-cards p{
     font-size: 15.5px;
   }
-  #github-repos a{
+  #git-cards a{
     font-size: 13px;
   }
 }
 @media screen and (max-width:492px){
-  .welcome h2 {
-      font-size: 2rem;
+  .socialmedia{
+    height: 50%;
   }
-  .welcome p {
-      font-size: 14px;
+  .welcome h2 {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width:420px){
   .welcome h2 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
-  .welcome p {
-      font-size: 13px;
+  #sub-heading p {
+    font-size: 14.5px;
   }
 }

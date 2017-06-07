@@ -1,10 +1,6 @@
 var repos_shown = 3, i=0, updated_at;
 $(document).ready(function() {
 
-    var scr = screen.availHeight;
-    var setFooterHeight = scr - ($('.main-content').outerHeight());
-    document.body.style.height = setFooterHeight + 'px';
-
   $.ajax({
     url:'https://api.github.com/users/samanimkr/repos',
     data:{
@@ -14,11 +10,15 @@ $(document).ready(function() {
       */
       sort: 'updated',
       direction: 'desc'
+    },
+    error: function (request, status, error) {
+      console.log("error: could not retrieve github data");
     }
   }).done(function(repos){
+    $('.progress').hide();
     $.each(repos, function(index, repo){
       updated_at = (repo.updated_at).substring(0,10);
-      $('#github-repos').append(`
+      $('#git-cards').append(`
         <div class="col s12 m4" id="repo${i}">
           <div class="card white darken-1">
             <div class="card-content">
@@ -30,7 +30,7 @@ $(document).ready(function() {
               </div>
             </div>
             <div class="card-action">
-              <a class="teal-text text-accent-3 center" href="#">GitHub Page</a>
+              <a class="teal-text text-accent-3 center" href="${repo.html_url}">GitHub Page</a>
             </div>
           </div>
         </div>
@@ -40,7 +40,6 @@ $(document).ready(function() {
       }
       i++;
     });
-    $('#recent_repos').show();
   });
 
   $('#load-more').click(function() {
