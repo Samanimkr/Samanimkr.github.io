@@ -1,0 +1,78 @@
+@media screen and (max-width:900px){
+  #github-repos p{
+    font-size: 14px;
+  }
+  .welcome p {
+      font-size: 20px;
+  }
+}
+@media screen and (max-width:870px){
+  #github-repos span{
+    font-size: 21px;
+  }
+  #github-repos p{
+    font-size: 13.5px;
+  }
+}
+@media screen and (max-width:760px){
+  .welcome h2 {
+      font-size: 3.4rem;
+  }
+  .welcome p {
+      font-size: 18px;
+  }
+  #github-repos span{
+    font-size: 18.5px;
+  }
+  #github-repos p{
+    font-size: 13px;
+  }
+  #github-repos a{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:670px){
+  .welcome h2 {
+      font-size: 3.25rem;
+  }
+  .welcome p {
+      font-size: 17px;
+  }
+  #github-repos span{
+    font-size: 16.5px;
+  }
+  #github-repos p{
+    font-size: 12.5px;
+  }
+  #github-repos a{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:600px){
+  .welcome h2 {
+      font-size: 3rem;
+  }
+  .welcome p {
+      font-size: 16px;
+  }
+  #github-repos {
+    width: 80%;
+  }
+  #github-repos span{
+    font-size: 18.5px;
+  }
+  #github-repos p{
+    font-size: 14.5px;
+  }
+  #github-repos a{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width:600px){
+  .welcome h2 {
+      font-size: 3rem;
+  }
+  .welcome p {
+      font-size: 16px;
+  }
+}

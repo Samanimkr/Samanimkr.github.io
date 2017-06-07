@@ -2,8 +2,15 @@
         font-family: fedservice;
         src: url(fedservice.ttf);
 }
+
 body {
     font-family: Rubik, sans-serif;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .brand-logo {
@@ -86,12 +93,6 @@ body {
   height: 200px;
   width: 100%;
 }
-
-#profile {
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-
-#profile p{
-  font-size: 18px;
+.card-action {
+  text-align: center;
 }
