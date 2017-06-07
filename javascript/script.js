@@ -1,6 +1,10 @@
 var repos_shown = 3, i=0, updated_at;
 $(document).ready(function() {
 
+    var scr = screen.availHeight;
+    var setFooterHeight = scr - ($('.main-content').outerHeight());
+    document.body.style.height = setFooterHeight + 'px';
+
   $.ajax({
     url:'https://api.github.com/users/samanimkr/repos',
     data:{
@@ -36,6 +40,7 @@ $(document).ready(function() {
       }
       i++;
     });
+    $('#recent_repos').show();
   });
 
   $('#load-more').click(function() {

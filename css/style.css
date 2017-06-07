@@ -5,10 +5,12 @@
 
 body {
     font-family: Rubik, sans-serif;
+    height: 100%;
+    margin: 0;
 }
-
 nav {
   position: relative;
+  background-color: #03a9f4;
   top: 0;
   left: 0;
 }
@@ -78,6 +80,7 @@ nav {
 }
 
 #recent_repos {
+    display: none;
     background-image: url(../img/pattern.png);
     background-repeat: repeat;
     padding-top: 10px;

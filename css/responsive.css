@@ -39,7 +39,7 @@
       font-size: 17px;
   }
   #github-repos span{
-    font-size: 16.5px;
+    font-size: 16px;
   }
   #github-repos p{
     font-size: 12.5px;
@@ -49,30 +49,44 @@
   }
 }
 @media screen and (max-width:600px){
+  nav {
+    background-color: #039be5 !important;
+  }
+  .links {
+    height: 120px;
+  }
   .welcome h2 {
-      font-size: 3rem;
+      font-size: 2.8rem;
   }
   .welcome p {
-      font-size: 16px;
+      font-size: 15.5px;
   }
   #github-repos {
-    width: 80%;
+    width: 75%;
   }
   #github-repos span{
-    font-size: 18.5px;
+    font-size: 19.5px;
   }
   #github-repos p{
-    font-size: 14.5px;
+    font-size: 15.5px;
   }
   #github-repos a{
     font-size: 13px;
   }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:492px){
   .welcome h2 {
-      font-size: 3rem;
+      font-size: 2rem;
   }
   .welcome p {
-      font-size: 16px;
+      font-size: 14px;
+  }
+}
+@media screen and (max-width:420px){
+  .welcome h2 {
+      font-size: 2rem;
+  }
+  .welcome p {
+      font-size: 13px;
   }
 }
