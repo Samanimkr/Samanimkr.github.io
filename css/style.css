@@ -1,28 +1,19 @@
-@font-face {
-        font-family: fedservice;
-        src: url(fedservice.ttf);
-}
-
 body {
     font-family: Rubik, sans-serif;
     height: 100%;
     margin: 0;
+    padding: 0;
 }
+
 nav {
   position: relative;
   background-color: #03a9f4;
-  top: 0;
-  left: 0;
+  padding: 0 1.5%;
 }
 
 .brand-logo {
-    font-family: fedservice;
     font-size: 28px !important;
-    margin-left: 1.5%;
-}
-
-.right {
-    margin-right: 1%;
+    font-weight: bold;
 }
 
 #wallpaper {
@@ -50,6 +41,14 @@ nav {
     padding: 0;
     margin: 0 auto;
     float: left;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 .welcome {
@@ -103,4 +102,7 @@ nav {
 }
 .card-action {
   text-align: center;
+}
+footer{
+  clear: both;
 }
