@@ -64,19 +64,20 @@ nav {
 .links {
     cursor: pointer;
     display: inline-block;
-    height: 220px;
+    height: 170px;
     margin: 0;
+    padding:0;
     width: 20%;
 }
 
 .socialmedia {
-  height: 55%;
+  height: 70%;
   margin: 0 auto;
   display: block;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 4px black;
+  border: 2px black;
   border-style: solid dotted;
 }
 
