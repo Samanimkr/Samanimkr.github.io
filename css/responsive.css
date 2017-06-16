@@ -60,14 +60,11 @@
   }
 }
 @media screen and (max-width:600px){
-  .links {
+  #github-profile {
     height: 120px;
   }
-  .links h5{
-    font-size: 15px;
-  }
-  .socialmedia{
-    height: 60%;
+  #github-profile h5{
+    font-size: 17px;
   }
   .welcome h2 {
     font-size: 2.8rem;
@@ -96,14 +93,19 @@
   }
 }
 @media screen and (max-width:492px){
-  .socialmedia{
-    height: 50%;
-  }
   .welcome h2 {
     font-size: 2rem;
   }
 }
 @media screen and (max-width:420px){
+  #github-profile {
+    width: 20%;
+    min-width: 75px;
+  }
+  #github-picture {
+    width: 100%;
+    height: auto;
+  }
   .welcome h2 {
     font-size: 2rem;
   }
