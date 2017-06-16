@@ -103,6 +103,7 @@ nav {
 .card-action {
   text-align: center;
 }
-footer{
-  clear: both;
+footer.page-footer{
+  padding:0;
+  margin: 0;
 }
