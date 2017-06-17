@@ -16,7 +16,9 @@ $(document).ready(function() {
       console.log("error: could not retrieve github data");
     }
   }).done(function(repos){
+    //stop the progress bar
     $('.progress').hide();
+
     $.each(repos, function(index, repo){
       updated_at = (repo.updated_at).substring(0,10);
       repocard = '<div class="col s12 m4" id="repo'+i+'">' +
