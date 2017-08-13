@@ -1,6 +1,6 @@
 @media screen and (max-width:992px){ /*For Nav menu*/
   nav {
-    background-color: #039be5 !important;
+    background-color: #039be5;
   }
   #sub-heading {
     width: 80%;
