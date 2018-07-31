@@ -1,103 +1,69 @@
-body {
-    font-family: Rubik, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-  position: relative;
-  background-color: #03a9f4;
-  padding: 0 1.5%;
-}
-
-.brand-logo {
-    font-size: 28px !important;
-    font-weight: bold;
-}
-
-.section {
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    float: left;
-}
-
-.clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-}
-
-.welcome {
-    padding-bottom: 15px;
-}
-
-#sub-heading {
-    font-size: 22px;
-    width: 60%;
-    margin: 0 auto;
-}
-
-#github-profile {
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  padding:0;
-  height: 170px;
-  width: 20%;
-  text-align: center;
-}
-
-#github-picture {
-  margin: 0 auto;
-  height: 70%;
-  display: block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 2px black;
-  border-style: solid dotted;
-}
-
-#section_divider {
-    height: 6px;
-}
-
-.progress {
-  width: 60%;
-  height: 6px;
-  margin: 0 auto;
-}
-
-#repos {
-    background-image: url(../img/pattern.png);
-    background-repeat: repeat;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-#git-cards {
-  text-align: left;
-  width: 100%;
-}
-.card-content {
-  height: 200px;
-  width: 100%;
-}
-.card-action {
-  text-align: center;
-}
-
-footer.page-footer{
-  padding:0;
+* {
   margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
-.footer-copyright {
-  color: #333;
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background_image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+span#name {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  color: #fff;
+}
+
+.home_content {
+  color: #fff;
+  width: 60%;
+}
+
+.home_content h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.home_content a#hire {
+  display: inline-block;
+  background-color: #3498db;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 18px 26px;
+  border-radius: 3px;
+  margin-top: 35px;
+}
+
+.home_content a#hire .fa-chevron-right {
+  margin-left: 20px;
+}
+
+.page_navigation {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 50px;
+  top: 0;
+  background-color: #aaa;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
 }
