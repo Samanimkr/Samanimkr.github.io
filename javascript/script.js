@@ -1,11 +1,44 @@
-var repos_shown = 3, i=0, updated_at, repocard;
-$(document).ready(function() {
+// var repos_shown = 3, i=0, updated_at, repocard;
+var currentPage = "home";
+function navigateTo(page){
+  if (page == "contact" && currentPage != "contact") {
 
-  setInterval(() => {
-        $('#top p').animate({'opacity' : '1'}, 500);
-        $('#top p').animate({'opacity' : '0.5'}, 500);
-    }, 1500);
+    var contentClass = "." + currentPage + "_content";
+    $(contentClass).animate({left: "100%",opacity: 0.3}, 500);
+    $(".contact_content").animate({left: "0", opacity: 1}, 500);
 
+    $(".nav span:nth-of-type(2)").removeClass("nav_selected");
+    $(".nav span:nth-of-type(3)").removeClass("nav_selected");
+    $(".nav span:nth-of-type(1)").addClass("nav_selected");
+
+    currentPage = "contact";
+  } else if (page == "home" && currentPage != "home") {
+
+    $(".nav span:nth-of-type(1)").removeClass("nav_selected");
+    $(".nav span:nth-of-type(3)").removeClass("nav_selected");
+    $(".nav span:nth-of-type(2)").addClass("nav_selected");
+
+    currentPage = "home";
+  } else if (page == "portfolio" && currentPage != "portfolio") {
+
+    var contentClass = "." + currentPage + "_content";
+    $(contentClass).animate({left: "-100%",opacity: 0.3}, 500);
+    $(".portfolio_content").animate({left: "0", opacity: 1}, 500);
+
+    $('.right').hide();
+    $('.left p').replaceWith('<p><i class="fas fa-angle-double-left fa-3x"></i> Home</p>');
+    console.log($('.left').attr("onclick"));
+
+    $(".nav span:nth-of-type(1)").removeClass("nav_selected");
+    $(".nav span:nth-of-type(2)").removeClass("nav_selected");
+    $(".nav span:nth-of-type(3)").addClass("nav_selected");
+
+    currentPage = "portfolio";
+  }
+}
+
+// $(document).ready(function() {
+//
   // $.ajax({
   //   url:'https://api.github.com/users/samanimkr/repos',
   //   data:{
@@ -60,4 +93,4 @@ $(document).ready(function() {
   //   }
   // });
 
-});
+// });
