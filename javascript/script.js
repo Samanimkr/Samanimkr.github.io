@@ -4,7 +4,7 @@ function navigateTo(page){
   if (page == "contact" && currentPage != "contact") {
 
     var contentClass = "." + currentPage + "_content";
-    $(contentClass).animate({left: "100%",opacity: 0.3}, 500);
+    $(contentClass).animate({left: "100%",opacity: 0}, 500);
     $(".contact_content").animate({left: "0", opacity: 1}, 500);
 
     $(".nav span:nth-of-type(2)").removeClass("nav_selected");
@@ -13,6 +13,15 @@ function navigateTo(page){
 
     currentPage = "contact";
   } else if (page == "home" && currentPage != "home") {
+
+    if(currentPage == "portfolio") {
+      $(".portfolio_content").animate({left: "100%",opacity: 0.3}, 500);
+      $(".home_content").animate({left: "20%", opacity: 1}, 500);
+      // $(".home_content").
+    } else if (currentPage == "contact") {
+      $(".contact_content").animate({left: "-100%",opacity: 0.3}, 500);
+      $(".home_content").animate({left: "20%", opacity: 1}, 500);
+    }
 
     $(".nav span:nth-of-type(1)").removeClass("nav_selected");
     $(".nav span:nth-of-type(3)").removeClass("nav_selected");
@@ -27,7 +36,7 @@ function navigateTo(page){
 
     $('.right').hide();
     $('.left p').replaceWith('<p><i class="fas fa-angle-double-left fa-3x"></i> Home</p>');
-    console.log($('.left').attr("onclick"));
+    $('.left').attr("onclick", "navigateTo('home')");
 
     $(".nav span:nth-of-type(1)").removeClass("nav_selected");
     $(".nav span:nth-of-type(2)").removeClass("nav_selected");

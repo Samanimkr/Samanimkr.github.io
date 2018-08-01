@@ -25,23 +25,26 @@
   </div>
 
   <div class="nav">
-    <span>CONTACT</span>
-    <span class="nav_selected">HOME</span>
-    <span>PORTFOLIO</span>
+    <span onclick="navigateTo('contact')">CONTACT</span>
+    <span onclick="navigateTo('home')" class="nav_selected">HOME</span>
+    <span onclick="navigateTo('portfolio')">PORTFOLIO</span>
   </div>
+  <div class="wrapper">
 
-  <div class="home_content">
-    <h1>Full Stack Web Developer.</h1>
-    <p>Based in Brighton, UK. I work with front-end (HTML, CSS, Javascript and React) and back-end (Node.js and MongoDB). I also use Java for software programming.</p>
-    <a id="hire" href="">I'm looking to hire <i class="fas fa-chevron-right"></i> </a>
-  </div>
+    <div class="contact_content">
+      <h1>Contact.</h1>
+    </div>
 
-  <div class="portfolio_content">
-    <h1>Portfolio.</h1>
-  </div>
+    <div class="home_content">
+      <h1>Full Stack Web Developer.</h1>
+      <p>Based in Brighton, UK. I work with front-end (HTML, CSS, Javascript and React) and back-end (Node.js and MongoDB). I also use Java for software programming.</p>
+      <a id="hire" href="">I'm looking to hire <i class="fas fa-chevron-right"></i> </a>
+    </div>
 
-  <div class="contact_content">
-    <h1>Contact.</h1>
+    <div class="portfolio_content">
+      <h1>Portfolio.</h1>
+    </div>
+
   </div>
 
   <a class="page_navigation left" onclick="navigateTo('contact')">
