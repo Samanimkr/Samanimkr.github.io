@@ -47,6 +47,32 @@ body {
   font-size: 12px;
 }
 
+.nav {
+  position: absolute;
+  top: 10px;
+  right: 20%;
+  color: #fff;
+  height: 50px;
+  text-align: right;
+}
+
+.nav span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 16.5px 13px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.nav .nav_selected {
+  border-bottom: 2px #3498db solid;
+}
+
+.nav span:hover {
+  color: #3498db;
+}
+
 .home_content {
   color: #fff;
   width: 60%;
@@ -71,6 +97,14 @@ body {
 
 .home_content a#hire .fa-chevron-right {
   margin-left: 20px;
+}
+
+.portfolio_content {
+  display: none;
+}
+
+.contact_content {
+  display: none;
 }
 
 .page_navigation {
