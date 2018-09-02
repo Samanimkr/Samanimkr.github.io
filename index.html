@@ -25,34 +25,33 @@
   </div>
 
   <div class="nav">
-    <span onclick="navigateTo('contact')">CONTACT</span>
-    <span onclick="navigateTo('home')" class="nav_selected">HOME</span>
-    <span onclick="navigateTo('portfolio')">PORTFOLIO</span>
+    <span onclick="#home">HOME</span>
+    <span onclick="#portfolio">PORTFOLIO</span>
+    <span onclick="#contact">CONTACT</span>
   </div>
-  <!-- <div class="wrapper"> -->
 
-    <div class="slider contact_content">
-      <h1>Contact.</h1>
-    </div>
 
-    <div class="slider home_content">
+  <div class="home_content" id="home">
+    <div class="wrapper">
       <h1>Full Stack Web Developer.</h1>
       <p>Based in Brighton, UK. I work with front-end (HTML, CSS, Javascript and React) and back-end (Node.js and MongoDB). I also use Java for software programming.</p>
       <a id="hire" href="">I'm looking to hire <i class="fas fa-chevron-right"></i> </a>
     </div>
+  </div>
 
-    <div class="slider portfolio_content">
-      <h1>Portfolio.</h1>
+  <div class="portfolio_content" id="#portfolio">
+    <div class="projects">
+      <img src="img/twitter_analyser.png" />
     </div>
+    <div class="separator"></div>
+    <div class="projects">
+      <img src="img/quirk.png" />
+    </div>
+  </div>
 
-  <!-- </div> -->
-
-  <a class="page_navigation left" onclick="navigate(-1)">
-    <p><i class="fas fa-angle-double-left fa-3x"></i> Contact</p>
-  </a>
-  <a class="page_navigation right" onclick="navigate(1)">
-    <p><i class="fas fa-angle-double-right fa-3x"></i> Portfolio</p>
-  </a>
+  <div class="contact_content" id="#contact">
+    <h1>Contact.</h1>
+  </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
