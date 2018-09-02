@@ -83,13 +83,17 @@ body {
   flex-direction: row;
 }
 
+.slider {
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
 .home_content {
   box-sizing: border-box;
   color: #fff;
   padding: 0 6%;
   flex: 1;
-  height: 100%;
-  min-width: 33.33333%;
   /* display: inline-block; */
 }
 
@@ -117,17 +121,12 @@ body {
 .portfolio_content {
   /* display: inline-block; */
   color: #f3f3f3;
-  height: 100%;
-  min-width: 33.333333%;
   background-color: #000;
 }
 
 .contact_content {
   /* display: inline-block; */
   background-color: #f3f3f3;
-  height: 100%;
-  width: 33.333333%;
-  background-color: #bbb;
 }
 
 .page_navigation {

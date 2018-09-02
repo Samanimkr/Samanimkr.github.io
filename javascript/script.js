@@ -1,50 +1,83 @@
-// var repos_shown = 3, i=0, updated_at, repocard;
-var currentPage = "home";
-function navigateTo(page){
-  if (page == "contact" && currentPage != "contact") {
+var sliderIndex = 2;
+showPage(sliderIndex);
 
-    var contentClass = "." + currentPage + "_content";
-    $(contentClass).animate({left: "100%",opacity: 0}, 500);
-    $(".contact_content").animate({left: "0", opacity: 1}, 500);
+function navigate(n){
+  showPage(sliderIndex += n);
 
-    $(".nav span:nth-of-type(2)").removeClass("nav_selected");
-    $(".nav span:nth-of-type(3)").removeClass("nav_selected");
-    $(".nav span:nth-of-type(1)").addClass("nav_selected");
+}
 
-    currentPage = "contact";
-  } else if (page == "home" && currentPage != "home") {
+function showPage(n){
+  var slides = document.getElementsByClassName("slider");
+  for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+  }
+  slides[sliderIndex-1].style.display = "block";
 
-    if(currentPage == "portfolio") {
-      $(".portfolio_content").animate({left: "100%",opacity: 0.3}, 500);
-      $(".home_content").animate({left: "20%", opacity: 1}, 500);
-      // $(".home_content").
-    } else if (currentPage == "contact") {
-      $(".contact_content").animate({left: "-100%",opacity: 0.3}, 500);
-      $(".home_content").animate({left: "20%", opacity: 1}, 500);
-    }
+  if (n == 1) {
+    $('.left').hide();
+    $('.right p').replaceWith('<p><i class="fas fa-angle-double-right fa-3x"></i> Home</p>');
 
-    $(".nav span:nth-of-type(1)").removeClass("nav_selected");
-    $(".nav span:nth-of-type(3)").removeClass("nav_selected");
-    $(".nav span:nth-of-type(2)").addClass("nav_selected");
+  } else if (n == 2) {
+    $('.right').show();
+    $('.right p').replaceWith('<p><i class="fas fa-angle-double-right fa-3x"></i> Portfolio</p>');
+    $('.left').show();
+    $('.left p').replaceWith('<p><i class="fas fa-angle-double-left fa-3x"></i> Contact</p>');
 
-    currentPage = "home";
-  } else if (page == "portfolio" && currentPage != "portfolio") {
-
-    var contentClass = "." + currentPage + "_content";
-    $(contentClass).animate({left: "-100%",opacity: 0.3}, 500);
-    $(".portfolio_content").animate({left: "0", opacity: 1}, 500);
-
+  } else if (n == 3) {
     $('.right').hide();
     $('.left p').replaceWith('<p><i class="fas fa-angle-double-left fa-3x"></i> Home</p>');
-    $('.left').attr("onclick", "navigateTo('home')");
-
-    $(".nav span:nth-of-type(1)").removeClass("nav_selected");
-    $(".nav span:nth-of-type(2)").removeClass("nav_selected");
-    $(".nav span:nth-of-type(3)").addClass("nav_selected");
-
-    currentPage = "portfolio";
   }
+
 }
+
+
+// var repos_shown = 3, i=0, updated_at, repocard;
+// var currentPage = "home";
+// function navigateTo(page){
+//   if (page == "contact" && currentPage != "contact") {
+//
+//     var contentClass = "." + currentPage + "_content";
+//     $(contentClass).animate({left: "100%",opacity: 0}, 500);
+//     $(".contact_content").animate({left: "0", opacity: 1}, 500);
+//
+//     $(".nav span:nth-of-type(2)").removeClass("nav_selected");
+//     $(".nav span:nth-of-type(3)").removeClass("nav_selected");
+//     $(".nav span:nth-of-type(1)").addClass("nav_selected");
+//
+//     currentPage = "contact";
+//   } else if (page == "home" && currentPage != "home") {
+//
+//     if(currentPage == "portfolio") {
+//       $(".portfolio_content").animate({left: "100%",opacity: 0.3}, 500);
+//       $(".home_content").animate({left: "20%", opacity: 1}, 500);
+//       // $(".home_content").
+//     } else if (currentPage == "contact") {
+//       $(".contact_content").animate({left: "-100%",opacity: 0.3}, 500);
+//       $(".home_content").animate({left: "20%", opacity: 1}, 500);
+//     }
+//
+//     $(".nav span:nth-of-type(1)").removeClass("nav_selected");
+//     $(".nav span:nth-of-type(3)").removeClass("nav_selected");
+//     $(".nav span:nth-of-type(2)").addClass("nav_selected");
+//
+//     currentPage = "home";
+//   } else if (page == "portfolio" && currentPage != "portfolio") {
+//
+//     var contentClass = "." + currentPage + "_content";
+//     $(contentClass).animate({left: "-100%",opacity: 0.3}, 500);
+//     $(".portfolio_content").animate({left: "0", opacity: 1}, 500);
+//
+//     $('.right').hide();
+//     $('.left p').replaceWith('<p><i class="fas fa-angle-double-left fa-3x"></i> Home</p>');
+//     $('.left').attr("onclick", "navigateTo('home')");
+//
+//     $(".nav span:nth-of-type(1)").removeClass("nav_selected");
+//     $(".nav span:nth-of-type(2)").removeClass("nav_selected");
+//     $(".nav span:nth-of-type(3)").addClass("nav_selected");
+//
+//     currentPage = "portfolio";
+//   }
+// }
 
 // $(document).ready(function() {
 //
