@@ -73,7 +73,6 @@ body {
 }
 
 .nav_links span:hover {
-  background-color: rgba(51, 152, 219, 0.15);
   border-bottom: 2px solid #3498db;
 }
 
@@ -134,12 +133,40 @@ body {
 
 .projects {
   height: 400px;
-  text-align: center;
+  padding: 62.5px 15%;
 }
 
 .projects img {
-  height: 300px;
-  margin: 50px 0;
+  height: 275px;
+  float: left;
+}
+
+.projects .project_info {
+  height: 275px;
+  width: 360px;
+  margin: 10px 0 0 480px;
+}
+
+.projects .project_info h2 {
+  font-size: 29px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.projects .project_info p {
+  font-size: 16px;
+  line-height: 25px;
+  color: #aaa;
+  margin-bottom: 20px;
+
+}
+.projects .project_info a {
+  background-color: #bdc3c7;
+  font-size: 12px;
+  color: #fff;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 5px;
 }
 
 .contact_content {
