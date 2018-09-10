@@ -15,7 +15,6 @@ body {
   background-size: cover;
   background-position: center;
   overflow-x: hidden;
-  padding-top: 60px;
 }
 
 .nav_wrapper {
@@ -42,7 +41,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 8px;
-  right: 0;
+  left: 60px;
   font-weight: 900;
 }
 
@@ -50,7 +49,7 @@ body {
   display: inline-block;
   position: absolute;
   bottom: 10px;
-  right: 0;
+  left: 60px;
   font-size: 12px;
 }
 
@@ -83,7 +82,7 @@ body {
 
 .home_content {
   color: #fff;
-  padding: 0 6%;
+  padding: 60px 6% 0 6%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -133,7 +132,9 @@ body {
 
 .projects {
   height: 400px;
-  padding: 62.5px 15%;
+  width: 1000px;
+  padding: 62.5px 0;
+  margin: 0 auto;
 }
 
 .projects img {
@@ -142,9 +143,10 @@ body {
 }
 
 .projects .project_info {
+  float: left;
   height: 275px;
   width: 360px;
-  margin: 10px 0 0 480px;
+  margin: 10px 0 0 50px;
 }
 
 .projects .project_info h2 {
@@ -161,8 +163,9 @@ body {
 
 }
 .projects .project_info a {
-  background-color: #bdc3c7;
-  font-size: 12px;
+  opacity: 0.8;
+  background-color: #3498db;
+  font-size: 14px;
   color: #fff;
   text-decoration: none;
   padding: 6px;
