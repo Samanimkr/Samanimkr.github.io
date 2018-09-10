@@ -173,9 +173,65 @@ body {
 }
 
 .contact_content {
-  color: #fff;
-  background-color: #2c3e50;
-  height: 50%;
+  color: rgba(255,255,255,0.95);
+  background-color: #1abc9c;
+  /* height: 500px; */
+  text-align: center;
+  line-height: 30px;
+  padding: 50px 0 90px 0;
+  position: relative;
+}
+
+.contact_content h3{
+  margin: 25px 0 0 0;
+  font-weight: 300;
+  padding: 0 25%;
+}
+
+.contact_content h2{
+  font-size:20px;
+  width: 200px;
+  padding: 5px 0;
+  margin: 10px auto 0 auto;
+  background-color: #fff;
+  color: #1abc9c;
+  border-radius: 20px;
+}
+
+.social_media a {
+  cursor: pointer;
+  padding: 16.5px;
+  text-align: center;
+  margin: 40px 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 5px solid rgba(255,255,255,0.3);
+  display: inline-block;
+  color: rgba(255,255,255,0.85);
+}
+
+.social_media a:hover {
+  background-color: #fff;
+  color: #1abc9c;
+}
+
+.social_media a:active {
+  color: #2ecc71;
+}
+
+.social_media a i {
+  font-size: 45px;
+}
+
+.footer {
+  padding: 30px 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  /* font-weight: 400; */
 }
 
 @-webkit-keyframes pulse {
