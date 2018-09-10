@@ -10,6 +10,10 @@ $(".nav_links a:nth-of-type(2)").click(function() {
 $(".nav_links a:nth-of-type(3)").click(function() {
     $('html,body').animate({scrollTop: $("#contact").offset().top},'slow');
 });
+//button link to: #Contact
+$("#hire").click(function() {
+    $('html,body').animate({scrollTop: $("#contact").offset().top},'slow');
+});
 
 // var repos_shown = 3, i=0, updated_at, repocard;
 // $(document).ready(function() {
