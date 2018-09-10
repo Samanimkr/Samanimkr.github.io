@@ -57,13 +57,14 @@ body {
   position: absolute;
   top: 5px;
   right: 20%;
-  color: #fff;
   height: 50px;
   text-align: right;
 }
 
-.nav_links span {
+.nav_links a {
   cursor: pointer;
+  color: #fff;
+  text-decoration: none;
   display: inline-block;
   padding: 16.5px 13px;
   font-size: 14px;
@@ -71,11 +72,11 @@ body {
   border-radius: 3px;
 }
 
-.nav_links span:hover {
+.nav_links a:hover {
   border-bottom: 2px solid #3498db;
 }
 
-.nav_links span:active {
+.nav_links a:active {
   background-color: rgba(51, 152, 219, 0.25);
   border-bottom: 3px solid #3498db;
 }
