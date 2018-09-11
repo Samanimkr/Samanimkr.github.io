@@ -28,6 +28,7 @@ body {
 
 .development {
   position: absolute;
+  z-index: 15;
   top: 0;
   left: 0;
   width: 100%;
@@ -256,4 +257,18 @@ body {
 .footer {
   padding: 30px 0;
   font-size: 18px;
+}
+
+/* Media queries to make the website responsive to large and small screens */
+/* Small screens: */
+@media screen and (max-width: 992px) {
+
+}
+/* Ipads: */
+@media screen and (max-width: 768px) {
+
+}
+/* Mobile Phones: */
+@media screen and (max-width: 500px) {
+
 }
