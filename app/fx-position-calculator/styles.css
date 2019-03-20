@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    position: relative;
+}
+
+form {
+    width: 50%;
+    margin: 40px auto;
+}
+
+.result {
+    width: 50%;
+    margin: 50px auto 0 auto;
+}
+
+.result > .form-group {
+    display: inline-block;
+    width: 49.5%;
+    margin: 0;
+    padding: 0;
+}
+
+#error-message {
+    display: none;
+    color: red;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+    .navbar-brand {
+        margin: 0 auto;
+    }
+
+    form {
+        width: 90%;
+        padding-bottom: 150px;
+        position: relative;
+    }
+    
+    .result {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #343a40;
+        padding: 2% 5%;
+        width: 100%;
+    }
+    
+    .result > .form-group {
+        width: 100%;
+        color: white;
+        margin-bottom: 10px;
+    }
+}
