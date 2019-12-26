@@ -26,23 +26,9 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-.development {
-  position: absolute;
-  z-index: 15;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 16px;
-  color: #fff;
-  background-color: rgba(255,255,255,0.2);
-  text-align: center;
-  font-size: 12px;
-  opacity: 0.8;
-}
-
 .name {
   position: relative;
-  color: #3498db;
+  color: #9b59b6;
   width: 230px;
 }
 
@@ -200,7 +186,7 @@ body {
 
 .contact_content {
   color: rgba(255,255,255,0.95);
-  background-color: #1abc9c;
+  background-color: #2c3e50;
   text-align: center;
   line-height: 30px;
   padding: 50px 0 0 0;
@@ -222,7 +208,7 @@ body {
   cursor: pointer;
   padding: 16.5px;
   text-align: center;
-  margin: 40px 20px;
+  margin: 50px 20px;
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -244,20 +230,6 @@ body {
   font-size: 45px;
 }
 
-.contact_content h2{
-  font-size:18px;
-  width: 200px;
-  padding: 5px 0;
-  margin: 10px auto 0 auto;
-  background-color: #fff;
-  color: #1abc9c;
-  border-radius: 20px;
-}
-
-.footer {
-  padding: 30px 0;
-  font-size: 18px;
-}
 
 /* Media queries to make the website responsive to large and small screens */
 /* Small screens: */
