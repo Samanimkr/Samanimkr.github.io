@@ -14,6 +14,7 @@ body {
   background-image: url(../img/background_image.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 
@@ -101,8 +102,14 @@ body {
   cursor: pointer;
   position: absolute;
   bottom: 30px;
+  transition: bottom 0.3s ease-in-out;
   color: #000;
   font-size: 28px;
+  padding: 5px;
+}
+
+.home_content a#scrollDown:hover {
+  bottom: 24px;
 }
 
 .separator {
@@ -118,45 +125,46 @@ body {
   overflow: auto;
 }
 
-.projects {
+.project {
   height: 400px;
   width: 1000px;
   padding: 62.5px 0;
   margin: 0 auto;
 }
 
-.projects img {
+.project img {
   height: 275px;
   float: left;
 }
 
-.projects .project_info {
+.project .project_info {
   float: left;
   height: 275px;
   width: 360px;
   margin: 10px 0 0 50px;
 }
 
-.projects .project_info h2 {
+.project .project_info h2 {
   font-size: 29px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.projects .project_info p {
+.project .project_info p {
   font-size: 16px;
   line-height: 25px;
   color: #aaa;
   margin-bottom: 20px;
 
 }
-.projects .project_info a {
+.project .project_info a {
   opacity: 0.8;
   background-color: #3498db;
   font-size: 14px;
   color: #fff;
   text-decoration: none;
   padding: 6px;
+  margin-right: 5px;
   border-radius: 5px;
 }
 
