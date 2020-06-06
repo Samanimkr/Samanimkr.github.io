@@ -27,7 +27,7 @@ const projectsData = [
         tags: ["Twitter API", "Google Maps API"],
         imageSource: "img/twitter_analyser.png",
         link: "https://github.com/Samanimkr/tweets-analyser",
-        linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fas fa-arrow-right"></i>',
+        linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fab fa-github fa-lg"></i>',
     },
     {
         name: "8 Hours",
@@ -43,7 +43,7 @@ const projectsData = [
         tags: ["Chart JS", "MongoDB", "Facebook Login API"],
         imageSource: "img/quirk.png",
         link: "https://github.com/Samanimkr/Quirk",
-        linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fas fa-arrow-right"></i>',
+        linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fab fa-github fa-lg"></i>',
     },
 ];
 
@@ -59,11 +59,11 @@ projectsData.forEach((project, i) => {
             <h2>${project.name}</h2>
             <p>${project.description}</p>
             ${project.tags.map(tag => `<a class="tag">${tag}</a>`).join('')}
-            <a class="linkToGithub" href="${project.link}" target="_blank">${project.linkText}</a>
+            <a class="project_link" href="${project.link}" target="_blank">${project.linkText}</a>
             </div>
         </div>
         ${i < (projectsData.length-1) ? '<div class="separator"></div>' : ''}
-        ${i === (projectsData.length-1) ? '<a id="more_projects" href="https://github.com/Samanimkr?tab=repositories" target="_blank">VIEW ALL PROJECTS &nbsp; <i class="fas fa-external-link-alt"></i></a>' : ''}
+        ${i === (projectsData.length-1) ? '<a id="more_projects" href="https://github.com/Samanimkr?tab=repositories" target="_blank">VIEW ALL PROJECTS</a>' : ''}
     `
     projectsList.appendChild(wrapper);
 })

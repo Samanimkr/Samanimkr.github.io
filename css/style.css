@@ -46,7 +46,7 @@ h2 { font-size: 28px; }
   position: absolute;
   top: 8px;
   left: 60px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .name p {
@@ -56,6 +56,14 @@ h2 { font-size: 28px; }
   left: 60px;
   font-size: 12px;
 }
+
+/* #mobile_menu {
+  display: none;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: right;
+} */
 
 .nav_links {
   height: 50px;
@@ -169,7 +177,7 @@ h2 { font-size: 28px; }
   border-radius: 3px;
 }
 
-.project .project_info .linkToGithub {
+.project .project_info .project_link {
   cursor: pointer;
   position: absolute;
   bottom: 25px;
@@ -192,10 +200,10 @@ h2 { font-size: 28px; }
 
 
 .contact_content {
-  color: #857246;
+  color: #6d6145;
   background-image: url(../img/pattern.jpg);
   background-position: center;
-  background-size: 500px;
+  background-size: 700px;
   background-repeat: repeat;
   text-align: center;
   line-height: 30px;
@@ -203,10 +211,14 @@ h2 { font-size: 28px; }
   position: relative;
 }
 
-.contact_content h3{
+.contact_content h1 {
+  padding: 0 40px;
+}
+
+.contact_content h3 {
   margin: 20px 0 0 0;
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 200;
   padding: 0 25%;
 }
 
@@ -219,7 +231,7 @@ h2 { font-size: 28px; }
   height: 80px;
   border-radius: 50%;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.55);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .social_media a:hover {
@@ -239,20 +251,117 @@ h2 { font-size: 28px; }
 /* Media queries to make the website responsive to large and small screens */
 /* Small screens: */
 @media screen and (max-width: 992px) {
-  h1 {
-    font-size: 28px;
+  h1 { font-size: 28px }
+  h2 { font-size: 24px }
+
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 0 0;
   }
-  h2 {
-    font-size: 24px;
+
+  .project img {
+    width: 90%;
+    height: auto;
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .project .project_info {
+    height: auto;
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+    padding: 40px;
+  }
+
+
+  .project .project_info .project_link {
+    display: block;
+    margin-top: 60px;
+    position: static;
+    bottom: auto;
+    left: auto;
+  }
+
+  .separator {
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 /* Ipads: */
-@media screen and (max-width: 768px) {
+@media screen and ( max-width: 799px) {
+  h1 { font-size: 24px }
+  h2 { font-size: 20px }
+
   body {
     background-attachment: scroll;
+  }
+
+  .nav_links a {
+    font-size: 12px;
+  }
+
+  .contact_content h3{
+    font-size: 16px;
+    padding: 0 40px;
   }
 }
 /* Mobile Phones: */
 @media screen and (max-width: 500px) {
+  h1 { font-size: 18px }
+  h2 { font-size: 14px }
 
+  .name #github_picture {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name span {
+    top: 4px;
+    left: 50px;
+    font-size: 12px;
+  }
+
+  .name p {
+    bottom: 14px;
+    left: 50px;
+    font-size: 10px;
+  }
+
+  .nav_links { display: none }
+  /* #mobile_menu { display: block } */
+
+  .home_content a#scrollDown {
+    font-size: 20px;
+  }
+
+  .project .project_info p {
+    font-size: 14px;
+  }
+
+  .project .project_info .tag {
+    font-size: 10px;
+    margin-right: 4px;
+  }
+
+  .project .project_info .project_link {
+    font-size: 12px;
+  }
+
+  .contact_content h3{
+    font-size: 12px;
+  }
+
+  .social_media a {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .social_media a i {
+    font-size: 30px;
+  }
 }
