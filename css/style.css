@@ -79,6 +79,7 @@ body {
 .home_content {
   position: relative;
   height: calc(100% - 80px);
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -99,8 +100,9 @@ body {
 .home_content a#scrollDown {
   cursor: pointer;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   color: #000;
+  font-size: 28px;
 }
 
 .separator {
