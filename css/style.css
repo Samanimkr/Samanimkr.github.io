@@ -182,7 +182,7 @@ h2 { font-size: 28px; }
 
 .portfolio_content a#more_projects {
   display: block;
-  margin: 35px auto;
+  margin: 45px auto 55px auto;
   color: #858585;
   width: 300px;
   font-weight: 600;
@@ -190,31 +190,16 @@ h2 { font-size: 28px; }
   text-decoration: none;
 }
 
-.skills_content {
-  height: 00px;
+
+.contact_content {
+  color: #857246;
   background-image: url(../img/pattern.jpg);
   background-position: center;
   background-size: 500px;
   background-repeat: repeat;
-  background-attachment: fixed;
-  filter: blur(2px);
-  -webkit-filter: blur(82x);
-
-}
-
-.contact_content {
-  color: #fff;
-  background-color: #2c3e50;
-  /* background-image: url(../img/pattern.jpg);
-  background-position: center;
-  background-size: 500px;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  filter: blur(2px);
-  -webkit-filter: blur(82x); */
   text-align: center;
   line-height: 30px;
-  padding: 50px 0 0 0;
+  padding: 100px 0 0 0;
   position: relative;
 }
 
@@ -227,24 +212,23 @@ h2 { font-size: 28px; }
 
 .social_media a {
   cursor: pointer;
-  padding: 16.5px;
+  padding: 18px;
   text-align: center;
   margin: 50px 20px;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  border: 5px solid rgba(255,255,255,0.3);
   display: inline-block;
-  color: rgba(255,255,255,0.85);
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .social_media a:hover {
   background-color: #fff;
-  color: #1abc9c;
+  color: #ff503f;
 }
 
 .social_media a:active {
-  color: #2ecc71;
+  color: #ee2512;
 }
 
 .social_media a i {
