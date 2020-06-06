@@ -26,7 +26,7 @@ const projectsData = [
         description: "Monitors the Twitter activity on the Rocky Horror Show and generates graphs showing real-time statistics.",
         tags: ["Twitter API", "Google Maps API"],
         imageSource: "img/twitter_analyser.png",
-        link: "https://apps.apple.com/gb/app/trustedhousesitters/id1292606611",
+        link: "https://github.com/Samanimkr/tweets-analyser",
         linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fas fa-arrow-right"></i>',
     },
     {
@@ -34,15 +34,15 @@ const projectsData = [
         description: "This is a global online programming competition, where programmers compete to make the best web application, that fits the randomly generated phrase, in 8 hours.",
         tags: ["Node JS", "Socket.io", "Javascript"],
         imageSource: "img/8_hours.png",
-        link: "https://apps.apple.com/gb/app/trustedhousesitters/id1292606611",
-        linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fas fa-arrow-right"></i>',
+        link: "",
+        linkText: '',
     },
     {
         name: "Quirk",
         description: "Habit Tracker which motivates and helps you become more consistent by competing against your friends.",
         tags: ["Chart JS", "MongoDB", "Facebook Login API"],
         imageSource: "img/quirk.png",
-        link: "https://apps.apple.com/gb/app/trustedhousesitters/id1292606611",
+        link: "https://github.com/Samanimkr/Quirk",
         linkText: 'VIEW PROJECT ON GITHUB &nbsp; <i class="fas fa-arrow-right"></i>',
     },
 ];
