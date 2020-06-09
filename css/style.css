@@ -78,6 +78,8 @@ h2 { font-size: 28px; }
   padding: 16px 13px;
   font-size: 14px;
   font-weight: 600;
+  border-bottom: 1px solid #fff;
+  transition: border 0.5s ease-in-out;
 }
 
 .nav_links a:hover {
@@ -168,13 +170,13 @@ h2 { font-size: 28px; }
 
 }
 .project .project_info .tag {
-  background-color: #c2e2f8;
   font-size: 13px;
-  color: #fff;
+  color: #ff9d93;
   text-decoration: none;
   padding: 3px;
   margin-right: 8px;
   border-radius: 3px;
+  border: 1px solid;
 }
 
 .project .project_info .project_link {
@@ -186,6 +188,11 @@ h2 { font-size: 28px; }
   font-weight: 600;
   color: #ff503f;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.project .project_info .project_link:hover {
+  color: #750a00;
 }
 
 .portfolio_content a#more_projects {
@@ -196,14 +203,18 @@ h2 { font-size: 28px; }
   font-weight: 600;
   text-align: center;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
+.portfolio_content a#more_projects:hover {
+  color: #292929;
+}
 
 .contact_content {
-  color: #6d6145;
+  color: #402d00;
   background-image: url(../img/pattern.jpg);
   background-position: center;
-  background-size: 700px;
+  background-size: 500px;
   background-repeat: repeat;
   text-align: center;
   line-height: 30px;
@@ -231,12 +242,14 @@ h2 { font-size: 28px; }
   height: 80px;
   border-radius: 50%;
   display: inline-block;
-  color: rgba(0, 0, 0, 0.75);
+  color: #000;
+  opacity: 0.85;
+  transition: background 0.3s ease-in;
 }
 
 .social_media a:hover {
-  background-color: #fff;
-  color: #ff503f;
+  background-color: #ff513f;
+  color: rgb(0, 0, 0);
 }
 
 .social_media a:active {
