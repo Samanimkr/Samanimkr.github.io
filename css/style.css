@@ -58,13 +58,12 @@ h2 { font-size: 28px; }
   font-size: 12px;
 }
 
-/* #mobile_menu {
+#mobile_menu_btn {
   display: none;
-  height: 40px;
-  padding: 10px;
+  margin: auto 5px;
   cursor: pointer;
   text-align: right;
-} */
+}
 
 .nav_links {
   height: 50px;
@@ -368,6 +367,15 @@ h2 { font-size: 28px; }
   h1 { font-size: 18px }
   h2 { font-size: 14px }
 
+  .nav_wrapper {
+    z-index: 10;
+    position: fixed;
+    background: #fff;
+    height: 60px;
+    padding: 10px 5%;
+    box-shadow: 0 0 6px 0px rgb(230, 230, 230);
+  }
+
   .name #github_picture {
     width: 40px;
     height: 40px;
@@ -380,13 +388,32 @@ h2 { font-size: 28px; }
   }
 
   .name p {
-    bottom: 14px;
+    bottom: 5px;
     left: 50px;
     font-size: 10px;
   }
 
-  .nav_links { display: none }
-  /* #mobile_menu { display: block } */
+  .nav_links {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 3px 3px -3px #ddd;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: left;
+  }
+
+  .nav_links a {
+    display: block;
+  }
+
+  #mobile_menu_btn { display: block }
+
+  .home_content {
+    height: 100%;
+  }
 
   .home_content a#scrollDown {
     font-size: 20px;

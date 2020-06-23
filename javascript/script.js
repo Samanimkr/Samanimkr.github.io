@@ -71,3 +71,14 @@ projectsData.forEach((project, i) => {
     `
     projectsList.appendChild(wrapper);
 })
+
+
+$("#mobile_menu_btn").click(function() {
+    $('.nav_links').slideToggle();
+})
+
+$(".nav_links a").click(function() {
+    if ($('#mobile_menu_btn').css('display') === "block") {
+        $('.nav_links').slideUp();
+    }
+})
