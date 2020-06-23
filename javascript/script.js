@@ -2,8 +2,12 @@
 $(".nav_links a:nth-of-type(1)").click(function() {
     $('html,body').animate({scrollTop: $("#portfolio").offset().top},'slow');
 });
-//Nav Link To: #Contact
+//Nav Link To: #Skills
 $(".nav_links a:nth-of-type(2)").click(function() {
+    $('html,body').animate({scrollTop: $("#skills").offset().top},'slow');
+});
+//Nav Link To: #Contact
+$(".nav_links a:nth-of-type(3)").click(function() {
     $('html,body').animate({scrollTop: $("#contact").offset().top},'slow');
 });
 //button link to: #Portfolio
