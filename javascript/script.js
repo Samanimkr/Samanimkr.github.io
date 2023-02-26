@@ -18,6 +18,22 @@ $("#scrollDown").click(function() {
 
 const projectsData = [
     {
+        name: "Clutch",
+        description: "A seamless, hassle-free car buying experience to drivers across Canada.",
+        tags: ["AWS", "Node", "Typescript", "Terraform", "PostgreSQL", "Kafka"],
+        imageSource: "img/clutch.png",
+        link: "https://www.clutch.ca/",
+        linkText: 'VIEW WEBSITE &nbsp; <i class="fa fa-globe fa-lg"></i>',
+    },
+    {
+        name: "Luxire Labels",
+        description: "Service for renting high-end luxury fashionware.",
+        tags: ["Node JS", "React JS", "MongoDB"],
+        imageSource: "img/luxire.png",
+        link: "",
+        linkText: '',
+    },
+    {
         name: "TrustedHousesitters",
         description: "Find pet sitters offering in-home pet care, or stay at places around the world by house sitting and caring for other's pets.",
         tags: ["React Native", "iOS", "Android"],
