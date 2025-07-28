@@ -1,10 +1,15 @@
 {
-  "name": "Nihal Maskey | Senior Software Engineer",
-  "short_name": "Nihal Maskey",
+  "name": "Samani Mukhtar | Software Engineer",
+  "short_name": "Samani Mukhtar",
   "icons": [
     {
       "src": "/favicon.png",
-      "sizes": "512x512",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     }
   ],
