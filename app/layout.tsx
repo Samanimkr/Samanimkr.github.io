@@ -4,7 +4,7 @@ import ClientLayout from "./client";
 import "@/styles/globals.css"; // Import globals.css here
 
 export const metadata: Metadata = {
-	metadataBase: new URL('https://samanimukhtar.com'),
+	metadataBase: new URL('https://samanimkr.github.io'),
 	title: "Samani Mukhtar | Software Engineer",
 	description:
 		"Portfolio of Samani Mukhtar, a Software Engineer specializing in backend systems, AI infrastructure, and full-stack development.",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		type: "website",
 		locale: "en_US",
-		url: "https://samanimukhtar.com",
+		url: "https://samanimkr.github.io",
 		title: "Samani Mukhtar | Software Engineer",
 		description:
 			"Portfolio of Samani Mukhtar, a Senior Software Engineer specializing in backend systems, AI infrastructure, and full-stack development.",

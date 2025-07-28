@@ -8,8 +8,8 @@
     "lint": "next lint",
     "start": "next start",
     "export": "next build",
-    "deploy": "npm run export && touch out/.nojekyll && gh-pages -d out",
-    "predeploy": "npm run export"
+    "serve": "npm run export && npx serve out",
+    "preview": "npm run export && npx serve out"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",
