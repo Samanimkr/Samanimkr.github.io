@@ -42,7 +42,7 @@ const jobs = [
 		// montelo.ai now belongs to someone else; link the 2024 snapshot.
 		href: "https://web.archive.org/web/2024/https://www.montelo.ai/",
 		preview: "/previews/montelo.webp",
-		period: "Mar 2024 — Present",
+		period: "Mar 2024 — Oct 2024",
 		points: [
 			"Onboarded 3 paying customers, reaching **five-digit ARR in 4 months**.",
 			"Deployed serverless fine-tuning pipelines for open-source LLMs using Axolotl and Modal.",
