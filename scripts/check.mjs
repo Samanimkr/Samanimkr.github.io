@@ -65,6 +65,15 @@ const hover = await js(`(() => { const img = document.querySelector(".preview-fl
 check("hover shows Turo preview in margin", hover.src === "/previews/turo.webp" && hover.x > 1000 && +hover.opacity > 0.9, hover);
 check("other jobs dim", hover.dimmed[1] === "1" && hover.dimmed[0] === "0.35", hover.dimmed);
 
+// Stack: logos draw in once scrolled to, then a torch lights up brand colours under the cursor
+await js(`document.getElementById("stack").scrollIntoView({ block: "start" })`);
+await sleep(4800);
+const stackState = await js(`document.querySelector(".stack").dataset.state`);
+const logo = await js(`(() => { const r = document.querySelector(".stack .skill svg").getBoundingClientRect(); return { x: r.left + 14, y: r.top + 14 }; })()`);
+await move(logo.x + 30, logo.y); await move(logo.x, logo.y); await sleep(500);
+const torch = await js(`getComputedStyle(document.querySelector(".torch")).opacity`);
+check("stack draws in, torch on hover", stackState === "done" && torch === "1", { stackState, torch });
+
 // Scramble settles on the real name, clock ticks in London time
 check("name settles", (await js(`document.querySelector("h1 [aria-hidden]").textContent`)) === "Samani Mukhtar", "");
 const clock = await js(`document.querySelector("h1 + p .tabular-nums").textContent`);

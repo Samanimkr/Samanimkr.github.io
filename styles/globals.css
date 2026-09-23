@@ -114,6 +114,113 @@ html {
 	backdrop-filter: blur(3px);
 }
 
+/* Stack: logos draw themselves in (data-state idle → play → done, set by <Stack>).
+   Mouse screens: grey, then a torch reveals brand colours around the cursor.
+   Touch screens: they fill in their brand colours (--c). */
+.stack {
+	position: relative;
+}
+.skill {
+	width: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5rem;
+}
+.skill svg {
+	width: 28px;
+	height: 28px;
+	overflow: visible;
+}
+.skill path {
+	fill: #a3a3a3;
+	stroke: #a3a3a3;
+	stroke-width: 0.6;
+}
+.skill.line path {
+	fill: none;
+	stroke-width: 1.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+.skill span {
+	font-size: 11px;
+	color: #a3a3a3;
+	white-space: nowrap;
+}
+.torch .skill path {
+	fill: var(--c);
+	stroke: var(--c);
+}
+.torch .skill span {
+	color: #171717;
+}
+.torch .skill.line path {
+	fill: none;
+}
+.torch {
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity 0.3s;
+	-webkit-mask-image: radial-gradient(circle 140px at var(--x, -999px) var(--y, -999px), #000 25%, transparent 100%);
+	mask-image: radial-gradient(circle 140px at var(--x, -999px) var(--y, -999px), #000 25%, transparent 100%);
+}
+@media (hover: hover) {
+	.stack[data-state="done"]:hover .torch {
+		opacity: 1;
+	}
+}
+@media (hover: none) {
+	.torch {
+		display: none;
+	}
+	.skill path {
+		fill: var(--c);
+		stroke: var(--c);
+	}
+	.skill.line path {
+		fill: none;
+	}
+	.skill span {
+		color: #525252;
+	}
+}
+.stack[data-state="idle"] .skill path,
+.stack[data-state="play"] .skill path {
+	stroke-dasharray: 1;
+	stroke-dashoffset: 1;
+	fill-opacity: 0;
+}
+.stack[data-state="idle"] .skill span {
+	opacity: 0;
+}
+.stack[data-state="play"] .skill path {
+	animation:
+		draw 1.3s cubic-bezier(0.4, 0, 0.2, 1) var(--d) forwards,
+		fill-in 0.6s ease calc(var(--d) + 900ms) forwards;
+}
+.stack[data-state="play"] .skill span {
+	opacity: 0;
+	animation: fade-in 0.4s ease calc(var(--d) + 700ms) forwards;
+}
+@keyframes draw {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+@keyframes fill-in {
+	to {
+		fill-opacity: 1;
+	}
+}
+@keyframes fade-in {
+	to {
+		opacity: 1;
+	}
+}
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,

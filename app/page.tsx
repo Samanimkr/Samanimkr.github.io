@@ -6,6 +6,7 @@ import {
 	Experience,
 	Magnetic,
 	Scramble,
+	Stack,
 } from "./interactive";
 
 const EMAIL = "samanimkr@outlook.com";
@@ -97,16 +98,6 @@ const jobs = [
 	},
 ];
 
-const stack = [
-	["Languages", "TypeScript, JavaScript, Java, Python, SQL"],
-	[
-		"Application",
-		"React, Next.js, NestJS, Node.js, Spring Boot, PostgreSQL, MongoDB, GraphQL, WebSockets",
-	],
-	["Infrastructure", "Kubernetes, Docker, Terraform, AWS, Argo CD, GitHub Actions, New Relic"],
-	["Systems", "OAuth 2.0, WSO2, Kafka, RabbitMQ, RAG, vector databases"],
-];
-
 const links = [
 	{ label: "GitHub", href: "https://github.com/Samanimkr" },
 	{ label: "LinkedIn", href: "https://www.linkedin.com/in/samani-mukhtar" },
@@ -189,14 +180,7 @@ export default function Home() {
 					</Section>
 
 					<Section title="Stack">
-						<dl className="space-y-3">
-							{stack.map(([label, value]) => (
-								<div key={label} className="reveal sm:flex sm:gap-6">
-									<dt className="w-32 shrink-0 text-neutral-500">{label}</dt>
-									<dd className="text-neutral-700">{value}</dd>
-								</div>
-							))}
-						</dl>
+						<Stack />
 					</Section>
 
 					<Section title="Education">

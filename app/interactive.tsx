@@ -18,6 +18,7 @@ import {
 	useRef,
 	useState,
 } from "react";
+import { stackGroups } from "./stack-icons";
 
 const GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
@@ -421,5 +422,88 @@ export function CommandPalette({ commands }: { commands: Command[] }) {
 				)}
 			</AnimatePresence>
 		</>
+	);
+}
+
+const DRAW_STEP_MS = 70; // stagger between logos
+const DRAW_MS = 1300 + 900; // one logo's outline + fill, see .stack in globals.css
+
+function StackGroups() {
+	let k = 0;
+	return stackGroups.map(({ group, skills }) => (
+		<div key={group} className="sm:flex sm:gap-6">
+			<div className="mb-3 w-32 shrink-0 pt-1.5 text-neutral-500 sm:mb-0">{group}</div>
+			<ul className="flex flex-wrap gap-x-3 gap-y-5">
+				{skills.map((s) => (
+					<li
+						key={s.name}
+						className={s.line ? "skill line" : "skill"}
+						style={{ "--c": s.color, "--d": `${k++ * DRAW_STEP_MS}ms` } as CSSProperties}
+					>
+						<svg viewBox="0 0 24 24" aria-hidden="true">
+							<path d={s.path} pathLength={1} />
+						</svg>
+						<span>{s.name}</span>
+					</li>
+				))}
+			</ul>
+		</div>
+	));
+}
+
+/**
+ * Skill logos draw themselves in when the section scrolls into view. Then, on
+ * mouse screens, a torch follows the cursor revealing brand colours; on touch
+ * screens the logos simply fill in their brand colours (see .stack in CSS).
+ */
+export function Stack() {
+	const ref = useRef<HTMLDivElement>(null);
+	// static = server render / no JS: everything visible, no torch
+	const [state, setState] = useState<"static" | "idle" | "play" | "done">("static");
+
+	useEffect(() => {
+		const el = ref.current;
+		if (!el) return;
+		if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			setState("done");
+			return;
+		}
+		setState("idle");
+		let timer: ReturnType<typeof setTimeout>;
+		const io = new IntersectionObserver(
+			([entry]) => {
+				if (!entry.isIntersecting) return;
+				io.disconnect();
+				setState("play");
+				const count = stackGroups.reduce((n, g) => n + g.skills.length, 0);
+				timer = setTimeout(() => setState("done"), count * DRAW_STEP_MS + DRAW_MS);
+			},
+			{ threshold: 0.3 },
+		);
+		io.observe(el);
+		return () => {
+			io.disconnect();
+			clearTimeout(timer);
+		};
+	}, []);
+
+	return (
+		<div
+			ref={ref}
+			data-state={state}
+			className="stack"
+			onPointerMove={(e) => {
+				const r = e.currentTarget.getBoundingClientRect();
+				e.currentTarget.style.setProperty("--x", `${e.clientX - r.left}px`);
+				e.currentTarget.style.setProperty("--y", `${e.clientY - r.top}px`);
+			}}
+		>
+			<div className="space-y-7">
+				<StackGroups />
+			</div>
+			<div aria-hidden="true" className="torch space-y-7">
+				<StackGroups />
+			</div>
+		</div>
 	);
 }
