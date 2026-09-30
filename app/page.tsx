@@ -101,7 +101,6 @@ const jobs = [
 const links = [
 	{ label: "GitHub", href: "https://github.com/Samanimkr" },
 	{ label: "LinkedIn", href: "https://www.linkedin.com/in/samani-mukhtar" },
-	{ label: "Résumé", href: "/samani_mukhtar_resume.pdf" },
 ];
 
 const sections = ["Experience", "Stack", "Education", "Contact"];
