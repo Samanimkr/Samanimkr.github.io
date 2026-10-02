@@ -4,7 +4,7 @@ import "@/styles/globals.css";
 
 const title = "Samani Mukhtar | Software Engineer";
 const description =
-	"Full-stack engineer and founder in London. Builder of PolyFundr, previously Turo and RhinestoneAI.";
+	"Software engineer and founder in London building production AI systems and reliable platforms in Python and TypeScript. Founder of PolyFundr, previously Turo, Montelo and RhinestoneAI.";
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://samanimkr.github.io"),

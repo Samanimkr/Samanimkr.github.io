@@ -145,8 +145,10 @@ html {
 }
 .skill span {
 	font-size: 11px;
+	line-height: 1.25;
 	color: #a3a3a3;
-	white-space: nowrap;
+	text-align: center;
+	text-wrap: balance;
 }
 .torch .skill path {
 	fill: var(--c);

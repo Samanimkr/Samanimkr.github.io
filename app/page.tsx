@@ -32,22 +32,22 @@ const jobs = [
 		preview: "/previews/turo.webp",
 		period: "Oct 2024 — May 2026",
 		points: [
-			"Built Kubernetes infrastructure across all environments and custom OAuth flows for the migration to WSO2, supporting **3.5M users** across web, iOS and Android.",
-			"Led Login with Uber from design through rollout, delivering a **25% lift in driver conversion** for an integration serving 100K+ renters.",
-			"Shipped passwordless Autologin for single-page checkout — **80% of new drivers** now book through it — plus deferred deep linking that survives app installation.",
+			"Built an internal AI agent that connects a docs knowledge base with New Relic, Temporal and Twilio to investigate on-call tickets and bugs.",
+			"Led Login with Uber from design through rollout, delivering a **25% lift in driver conversion** for an integration serving 100K+ renters; built the account-linking APIs and web login and coordinated iOS and Android delivery.",
+			"Built Kubernetes infrastructure and custom OAuth migration flows for WSO2, supporting **3.5M users** across web and mobile with Terraform, Docker and Argo CD.",
+			"Implemented passwordless Autologin, used by **80% of new drivers** to book before signup, plus New Relic dashboards and alerts across authentication and onboarding.",
 		],
 	},
 	{
-		role: "Co-Founder & CTO",
-		company: "MonteloAI",
+		role: "Co-Founder and Engineer",
+		company: "Montelo",
 		// montelo.ai now belongs to someone else; link the 2024 snapshot.
 		href: "https://web.archive.org/web/2024/https://www.montelo.ai/",
 		preview: "/previews/montelo.webp",
-		period: "Mar 2024 — Oct 2024",
+		period: "Mar 2024 — Sep 2024",
 		points: [
-			"Onboarded 3 paying customers, reaching **five-digit ARR in 4 months**.",
-			"Deployed serverless fine-tuning pipelines for open-source LLMs using Axolotl and Modal.",
-			"Built synthetic-data generation on BullMQ queues and cron jobs, plus A/B testing to compare fine-tuned model variants on the same input.",
+			"Delivered a custom integration for the first paying customer, translating their requirements into a production LLM workflow.",
+			"Built Python backend services for an LLM fine-tuning and observability platform, with serverless training workflows using Axolotl and Modal.",
 		],
 	},
 	{
@@ -57,9 +57,9 @@ const jobs = [
 		preview: "/previews/rhinestone.webp",
 		period: "Jul 2023 — Mar 2024",
 		points: [
-			"Built a natural-language AI search engine for the crypto market: text-to-SQL with multi-agent RAG selecting from **50+ tools**.",
+			"Built a natural-language AI search engine for the crypto market: a Python text-to-SQL system using multi-agent RAG to select from **50+ tools**.",
 			"Enabled **sub-second aggregations across billions of rows** using Rockset, with vector-database query caching.",
-			"Shipped the frontend and a custom command palette with Next.js, Radix UI and TypeScript.",
+			"Shipped the product frontend and a custom command palette with Next.js, Radix UI and TypeScript.",
 		],
 	},
 	{
@@ -140,14 +140,15 @@ export default function Home() {
 						<Scramble text="Samani Mukhtar" />
 					</h1>
 					<p className="rise mt-1 text-neutral-500" style={order(1)}>
-						Full-stack engineer and founder. London, UK{" "}
+						Software engineer and founder. London, UK{" "}
 						<span className="text-neutral-300">·</span> <Clock />
 					</p>
 					<p className="rise mt-6 leading-relaxed text-neutral-700" style={order(2)}>
-						I build products end to end with TypeScript, Next.js and PostgreSQL. Most recently I
-						took PolyFundr from nothing to 5,000 users and $100K+ ARR as the sole engineer. Before
-						that I led growth integrations and an OAuth migration at Turo, co-founded MonteloAI, and
-						built AI-powered analytics as a founding engineer at RhinestoneAI.
+						I build production AI systems and reliable platforms in Python and TypeScript. I've
+						built multi-agent RAG workflows spanning 50+ tools at RhinestoneAI, LLM infrastructure
+						at Montelo, and led the Uber integration and authentication migration at Turo. Most
+						recently I took PolyFundr to 5,000 users and $100K+ ARR as the sole engineer. I own
+						projects from requirements and architecture through deployment and production support.
 					</p>
 					<div
 						className="rise mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm"
