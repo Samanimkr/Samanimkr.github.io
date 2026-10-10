@@ -20,7 +20,7 @@ const jobs = [
 		preview: "/previews/polyfundr.webp",
 		period: "May 2026 — Present",
 		points: [
-			"Built and launched a prediction-market trader funding platform as sole engineer, reaching **5,000 users** and **$100K+ ARR**, with 500 paid evaluations and $15K in trader payouts.",
+			"Built and launched a prediction-market trader funding platform as sole engineer, reaching **5,000 users** and **6-figure ARR**, with 500 paid evaluations.",
 			"Built evaluation and risk systems, trading workflows and admin tooling in NestJS, Next.js, PostgreSQL and WebSockets, with error handling that kept the service up through Polymarket API failures.",
 			"Owned product, launch and marketing alongside sole responsibility for engineering.",
 		],
@@ -147,7 +147,7 @@ export default function Home() {
 						I build production AI systems and reliable platforms in Python and TypeScript. I've
 						built multi-agent RAG workflows spanning 50+ tools at RhinestoneAI, LLM infrastructure
 						at Montelo, and led the Uber integration and authentication migration at Turo. Most
-						recently I took PolyFundr to 5,000 users and $100K+ ARR as the sole engineer. I own
+						recently I took PolyFundr to 5,000 users and 6-figure ARR as the sole engineer. I own
 						projects from requirements and architecture through deployment and production support.
 					</p>
 					<div
